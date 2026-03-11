@@ -13,8 +13,10 @@ if(marks >= 85){
     console.log("Grade A, you passed with distriction");
 }else if(marks>=60){
     console.log("Grade B, you passed with first class");
-}else if (marks>=30){
-    console.log("Grade C, your failed but you can try again");
+}else if (marks>=35){
+    console.log("Grade C, your just passed");
+} else {
+    console.log("Grade F, Your Failed. Better luck next time");
 }
 
 // switch statement
