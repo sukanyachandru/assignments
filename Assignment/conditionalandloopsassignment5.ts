@@ -5,7 +5,7 @@ employeeDetails.set("Carol Davis",[82000, 7.1, 4.5])
 employeeDetails.set("David Brown",[90000, 10.2, 2.5])
 employeeDetails.set("Eva Green",[60000, 2.4, 3.5])
 
-const hikeMap: Map<string, number> = new Map();
+let hikeMap: Map<string, number> = new Map();
 
 // Calculate hike for each employee and store in hikePercentage
 for (let key of employeeDetails.keys()) {
