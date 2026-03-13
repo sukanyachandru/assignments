@@ -1,4 +1,4 @@
-const employeeDetails: Map<string,number[]> = new Map();
+let employeeDetails: Map<string,number[]> = new Map();
 employeeDetails.set("Alice Johnson",[75000, 5.1, 4.2])
 employeeDetails.set("Bob Smith",[68000, 3.2, 3.8])
 employeeDetails.set("Carol Davis",[82000, 7.1, 4.5])
@@ -8,13 +8,13 @@ employeeDetails.set("Eva Green",[60000, 2.4, 3.5])
 const hikeMap: Map<string, number> = new Map();
 
 // Calculate hike for each employee and store in hikePercentage
-for (const key of employeeDetails.keys()) {
-  const data = employeeDetails.get(key)!;
-  const baseSalary = data[0]!;
-  const yearOfExperience = data[1]!;
-  const yearEndRating = data[2]!;
+for (let key of employeeDetails.keys()) {
+  let data = employeeDetails.get(key)!;
+  let baseSalary = data[0]!;
+  let yearOfExperience = data[1]!;
+  let yearEndRating = data[2]!;
 
-const hikePercentage = calculateHike(baseSalary, yearOfExperience, yearEndRating);
+let hikePercentage = calculateHike(baseSalary, yearOfExperience, yearEndRating);
   hikeMap.set(key, hikePercentage);
 }
 
@@ -42,7 +42,7 @@ else {
 if (experience > 5){
     reward = 5000;
 }
-const totalHike = (baseSalary * variablepay / 100) + bonus + reward;
+let totalHike = (baseSalary * variablepay / 100) + bonus + reward;
 return (totalHike / baseSalary)* 100;
 }
 
